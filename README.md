@@ -7,18 +7,18 @@ En este repositorio vamos a almacenar todos los **ejercicios** del módulo
 ## Titulo 1.1
 -tengo yo
 ##  Titulo 1.2
--por tener más
+-de tener más
 
 Para que te informes https://es.wikipedia.org/wiki/Mojinos_Escoz%C3%ADos
 
 ![image](https://github.com/MarcosCroqueta/LMSGI/assets/145746832/84085341-684e-4e19-aaaf-bf1c6d2fe3d4)  ![image](https://github.com/MarcosCroqueta/LMSGI/assets/145746832/913cd9de-b950-44c5-9b28-95b1eff3d3f1) ![image](https://github.com/MarcosCroqueta/LMSGI/assets/145746832/63198f0d-065e-4407-94b5-532197f04f6d)
 
-|Que Gueno que estoy|Semos los más grandes|Semos unos maquinas| 
-|---------|--------|--------|
-|---------|--------|--------|
-|---------|--------|--------|
-|---------|--------|--------|
-|---------|--------|--------|
-|---------|--------|--------|
-|---------|--------|--------|
-|---------|--------|--------|
+  |Que Gueno que estoy|Semos los más grandes|Semos unos maquinas| 
+  |---------|--------|--------|
+  |---------|--------|--------|
+  |---------|--------|--------|
+  |---------|--------|--------|
+  |---------|--------|--------|
+  |---------|--------|--------|
+  |---------|--------|--------|
+  |---------|--------|--------|
