@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Curriculum>
+
+<Datos_Personales>
+    <nombre>Marcos</nombre>
+    <apellidos>Sánchez Capilla</apellidos>
+    <fecha>14/10/2005</fecha>
+    <lugar_nac>Granada</lugar_nac>
+    <nacionalidad>España</nacionalidad>
+    <NIF>77963772M</NIF>
+    <foto>img</foto>
+</Datos_Personales>
+
+<Datos_Contacto>
+    <tipo_via></tipo_via>
+    <nombre_via></nombre_via>
+    <numero></numero>
+    <piso></piso>
+    <puerta></puerta>
+    <codigo_postal></codigo_postal>
+    <pais></pais>
+    <email></email>
+    <telefono_movil></telefono_movil>
+    <telefono></telefono>
+    <telefono_fijo></telefono_fijo>
+</Datos_Contacto>
+
+<Datos_Contacto_Adicionales>
+    <pagina_web></pagina_web>
+    <cuentas_redes></cuentas_redes>
+</Datos_Contacto_Adicionales>
+
+<Formación_académica></Formación_académica>
+
+
+
+</Curriculum>
