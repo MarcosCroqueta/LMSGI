@@ -24,13 +24,15 @@
     <telefono></telefono>
     <telefono_fijo></telefono_fijo>
 </Datos_Contacto>
-
 <Datos_Contacto_Adicionales>
     <pagina_web></pagina_web>
     <cuentas_redes></cuentas_redes>
 </Datos_Contacto_Adicionales>
 
-<Formación_académica></Formación_académica>
+
+<Formación_académica>
+    <Nombre_Formación></Nombre_Formación>
+</Formación_académica>
 
 
 
