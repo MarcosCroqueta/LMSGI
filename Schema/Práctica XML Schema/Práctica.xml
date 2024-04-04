@@ -15,25 +15,56 @@
     <tipo_via></tipo_via>
     <nombre_via></nombre_via>
     <numero></numero>
-    <piso></piso>
-    <puerta></puerta>
-    <codigo_postal></codigo_postal>
-    <pais></pais>
-    <email></email>
-    <telefono_movil></telefono_movil>
+    <piso>2</piso>
+    <puerta>1</puerta>
+    <codigo_postal>18007</codigo_postal>
+    <pais>España</pais>
+    <email>marcos240141@gmail.com</email>
+    <telefono_movil>633874040</telefono_movil>
     <telefono></telefono>
     <telefono_fijo></telefono_fijo>
 </Datos_Contacto>
+
 <Datos_Contacto_Adicionales>
-    <pagina_web></pagina_web>
-    <cuentas_redes></cuentas_redes>
+    <pagina_web>www.loquesea.com</pagina_web>
+    <cuentas_redes>@maarcoos.sc</cuentas_redes>
 </Datos_Contacto_Adicionales>
 
-
 <Formación_académica>
-    <Nombre_Formación></Nombre_Formación>
+    <Nombre_Estudio>Formación Profesional DAW</Nombre_Estudio> 
+    <Lugar_Estudio>Zaidín Vergéles </Lugar_Estudio>   
+    <Inicio_Estudio>14/10/2005</Inicio_Estudio>
+    <Fin_Estudio>14/10/2005</Fin_Estudio>
 </Formación_académica>
 
+<Idiomas>
+    <Nombre_Idioma>Inglés</Nombre_Idioma>
+    <Nivel_Expresion_Oral>Alto</Nivel_Expresion_Oral>
+    <Nivel_Compresion_Oral>Alto</Nivel_Compresion_Oral>
+    <Nivel_Expresion_Escrita>Alto</Nivel_Expresion_Escrita>
+    <Nivel_Compresion_Escrita>Alto</Nivel_Compresion_Escrita>
+    <Titulo_Acreditado>Cambridge</Titulo_Acreditado>
+    <Nivel_titulo>B2</Nivel_titulo>
+</Idiomas>
 
+<Experienca_Laboral>
+    <Lugar_Experiencia>Fábrica pan</Lugar_Experiencia>
+    <Puesto_Desempeñado>Gerente</Puesto_Desempeñado>
+    <Fecha_Comienzo>14/10/2005</Fecha_Comienzo>
+    <Fecha_FIN>14/10/2005</Fecha_FIN>
+</Experienca_Laboral>
+
+<Competencias>
+    <Nombre_Competencia>Liderazgo</Nombre_Competencia>
+    <Nivel_Competencia>Alta</Nivel_Competencia>
+</Competencias>
+
+<Datos_Adicionales>
+    <Aficiones>Gimnasio</Aficiones>
+    <Disponibilidad_Viajar>Disponible</Disponibilidad_Viajar>
+    <Vehículo_Propio>Si</Vehículo_Propio>
+    <Licencias_Conducir>Moto/Tractor</Licencias_Conducir>
+
+</Datos_Adicionales>
 
 </Curriculum>
