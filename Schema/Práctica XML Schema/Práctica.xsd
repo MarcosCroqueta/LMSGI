@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Curriculum" type="T-Curriculum"></xs:element>
+
+<xs:complexType name="T-Curriculum">
+    <xs:sequence>
+        <xs:element name="Datos_Personales" type="Mdatos"></xs:element>
+        <xs:element name="Contactos" type="Mcontactos"></xs:element>
+        <xs:element name="Contacto_Adicional" type="Mcontacto_Adicional"></xs:element>
+        <xs:element name="Formacion" type="Mformacion" maxOccurs="unbounded"></xs:element>
+        <xs:element name="Idiomas" type="Midiomas" maxOccurs="unbounded"></xs:element>
+        <xs:element name="Experiencia" type="Mexperiencia" maxOccurs="unbounded"></xs:element>
+        <xs:element name="Competencia" type="MCompetencia" maxOccurs="unbounded"></xs:element>
+        <xs:element name="Datos_Adicionales" type="MDatos_Adicionales"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="Mdatos">
+    <xs:sequence>
+        <xs:element name="Nombre" type="xs:string"></xs:element>
+        <xs:element name="Apellido" type="xs:string"></xs:element>
+        <xs:element name="Fecha_Nacimiento" type="xs:date"></xs:element>
+        <xs:element name="Lugar_Nacimiento" type="xs:string"></xs:element>
+        <xs:element name="Nacionalidad" type="xs:string"></xs:element>
+        <xs:element name="Nif" type="Tnif"></xs:element>
+        <xs:element name="Foto" type="xs:string"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="Mnif">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{8}[A-Z]"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:complexType name="Mcontactos">
+    <xs:sequence>
+        <xs:element name="tipo" type="xs:string"></xs:element>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="numero" type="xs:string" minOccurs="0"></xs:element>
+        <xs:element name="portal" type="xs:string" minOccurs="0"></xs:element>
+        <xs:element name="escalera" type="xs:string" minOccurs="0"></xs:element>
+        <xs:element name="piso" type="xs:string" minOccurs="0"></xs:element>
+        <xs:element name="puerta" type="xs:string" minOccurs="0"></xs:element>
+        <xs:element name="CP" type="MCP"></xs:element>
+        <xs:element name="pais" default="España" type="xs:string"></xs:element>
+        <xs:element name="email" type="Memail"></xs:element>
+        <xs:element name="Telefono" type="Telefono"></xs:element>
+        <xs:element name="Telefono_Fijo" type="Telefono" minOccurs="0"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="Telefono">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{9}"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="Memail">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\w+@gmail.com"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="MCP">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{5}"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:complexType name="Mcontacto_Adicional">
+    <xs:sequence>
+        <xs:element name="web" type="Mweb" minOccurs="0" maxOccurs="unbounded"></xs:element>
+        <xs:element name="redes" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="Mweb">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="www.+\w+.(com|es|org)"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:complexType name="Mfomracion">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="lugar" type="xs:string"></xs:element>
+        <xs:element name="Fecha_inicio" type="xs:date"></xs:element>
+        <xs:element name="Fecha_Fin" type="xs:date"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="Midiomas">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="nivel_Oral" default="medio" type="MNivel"></xs:element>
+        <xs:element name="comprensión_Oral" default="medio" type="MNivel"></xs:element>
+        <xs:element name="expresion_Escrita" default="medio" type="MNivel"></xs:element>
+        <xs:element name="nivel_Escrito" default="medio" type="MNivel"></xs:element>
+        <xs:element name="titulo_Academico" type="xs:string"></xs:element>
+        <xs:element name="nivel_Titulo" default="B2" type="Mtitulo"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="MNivel">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="bajo|medio|alto"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="Mtitulo">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="A1|A2|B1|B2|C1|C2"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:complexType name="Mexperiencia">
+    <xs:sequence>
+        <xs:element name="lugar" type="xs:string"></xs:element>
+        <xs:element name="puesto" type="xs:string"></xs:element>
+        <xs:element name="Fecha_Inicio" type="xs:date"></xs:element>
+        <xs:element name="Fecha_Fin" type="xs:date"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="MCompetencia">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="nivel" default="1" type="MValor"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="MValor">
+    <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="5"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:complexType name="MDatosAdicionales">
+    <xs:sequence>
+        <xs:element name="aficiones" type="xs:string"></xs:element>
+        <xs:element name="disponibilidad_Viajar" default="no" type="Mviaje"></xs:element>
+        <xs:element name="vehiculo_Propio" type="xs:string"></xs:element>
+        <xs:element name="licencia" type="MLicencia"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+<xs:simpleType name="Mviaje">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="si|no"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="MLicencia">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="AM|A1|A2|A|B|B+E|C1|C|D1|D1+E|D|BTP"/>
+    </xs:restriction>
+</xs:simpleType>
+</xs:schema>
